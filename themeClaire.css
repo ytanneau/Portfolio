@@ -1,0 +1,9 @@
+:root{
+    --couleur-principal : white;
+    --couleur-inverse : black;
+    --couleur-secondaire : rgb(130, 130, 130);
+    --couleur-tertiaire : rgb(227, 227, 227);
+    --couleur-theme1 : #043382;
+    --couleur-theme2 : aqua;
+    --border : solid var(--couleur-inverse) 3px;
+}
