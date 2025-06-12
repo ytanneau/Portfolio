@@ -1,0 +1,145 @@
+VAR club REAL RELATION{
+club_id INT,
+club_name char,
+club_acronym char
+} KEY {club_id};
+
+VAR team REAL RELATION{
+team_id INT,
+team_name char,
+coach_name_firstname char,
+club_id INT
+} KEY {team_id};
+CONSTRAINT relation_Team_fk1
+	team{club_id} <= club{club_id};
+
+VAR datedate REAL RELATION{
+date INT
+} KEY {date};
+
+VAR player REAL RELATION{
+player_id INT,
+player_name char,
+player_firstname char,
+date_of_birth int,
+nationality char,
+birth_country char,
+weight int,
+size int
+} KEY {player_id};
+
+VAR league REAL RELATION{
+league_id INT,
+league_name char
+} KEY {league_id};
+
+
+
+VAR start REAL RELATION{
+team_id INT,
+player_id INT,
+date INT
+} KEY {team_id, player_id, date};
+
+CONSTRAINT Start_fk_team
+	start{team_id} <= team{team_id};
+	
+CONSTRAINT Start_fk_player
+	start{player_id} <= player{player_id};
+	
+CONSTRAINT Start_fk_date
+	start{date} <= date{date};
+	
+
+VAR fend REAL RELATION{
+team_id INT,
+player_id INT,
+date INT
+} KEY {team_id, player_id, date};
+
+CONSTRAINT end_fk_team
+	fend{team_id} <= team{team_id};
+	
+CONSTRAINT end_fk_player
+	fend{player_id} <= player{player_id};
+	
+CONSTRAINT end_fk_date
+	fend{date} <= datedate{date};
+	
+
+VAR talkes_part REAL RELATION{
+team_id INT,
+season_id char,
+league_id INT
+} KEY {team_id, season_id, league_id};
+
+CONSTRAINT talkes_part_fk_team
+	talkes_part{team_id} <= team{team_id};
+	
+CONSTRAINT talkes_part_fk_player
+	talkes_part{player_id} <= player{player_id};
+	
+CONSTRAINT talkes_part_fk_date
+	talkes_part{date} <= date{date};
+
+
+VAR season REAL RELATION {
+	season_id char
+} KEY{season_id};
+
+VAR day REAL RELATION {
+	season_id char,
+	day_nr INT
+} KEY{season_id, day_nr};
+
+CONSTRAINT day_fk_season
+	day{season_id} <= season{season_id};
+	
+
+VAR plays REAL RELATION {
+	position char,
+	starting_time int,
+	yellow_cards int,
+	red_cards boolean,
+	shirt_nr int,
+	player_id int,
+	season_id char,
+	day_nr int
+} KEY{player_id, season_id, day_nr};
+
+CONSTRAINT plays_fk_day
+	plays{season_id, day_nr} <= day{season_id, day_nr};
+	
+CONSTRAINT plays_fk_player
+	plays{player_id} <= day{player_id};
+	
+
+VAR characteristics REAL RELATION {
+	number_of_teams int,
+	season_id int,
+	league_id int
+} KEY{season_id, league_id};
+
+CONSTRAINT characteristics_fk_season
+	characteristics{season_id} <= season{season_id};
+
+CONSTRAINT characteristics_fk_season
+	characteristics{league_id} <= leaguue{league_id};
+	
+
+VAR match REAL RELATION {
+	attendance int,
+	local_goals int,
+	visitors_goal int,
+	match_date_time int,
+	team_id_loc INT,
+	team_id_vis INT,
+	season_id char,
+	day_nr int
+} KEY {team_id_loc, season_id, day_nr} KEY {team_id_vis, season_id, day_nr};
+
+CONSTRAINT Match_fk_Team
+	match{team_id_loc} <= team{team_id} rename{team_id as team_id_loc};
+
+CONSTRAINT Match_fk_Team
+	match{team_id_vis} <= team{team_id} rename{team_id as team_id_vis};
