@@ -1,118 +1,260 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Yann Tanneau Portfolio</title>
         <link rel="icone" type="image/png" href="">
-        <link id="theme-link" rel="stylesheet" href="themeClaire.css">
         <link rel="stylesheet" href="style.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     </head>
-    <body id ="Paccueil"> 
-        <header id="header"></header>
+    <body id="home">
+        <header>
+            <button onclick="window.location.href='mailto:yann.tanneau.pro@gmail.com'">Me contacter</button>
+            <ul>
+                <li><a href="">Accueil</a></li>
+                <li>
+                    <a href="#comp">Compétence</a>
+                    <ul>
+                        <li><a href="Realiser_un_developpement_dapplication/">Realiser un developpement d'application</a></li>
+                        <li><a href="Optimiser_des_applications_informatiques/">Optimiser des applications informatiques</a></li>
+                        <li><a href="Administrer_des_systemes_informatiques_connunicants_complexes/">Administrer des systemes informatiques connunicants complexes</a></li>
+                        <li><a href="Gerer_des_donnees_de_linformation/">Gerer des donnees de l'information</a></li>
+                        <li><a href="Conduire_un_projet/">Conduire un projet</a></li>
+                        <li><a href="Travailler_dans_une_equipe_informatique/">Travailler dans une equipe informatique</a></li>
+                    </ul>
+                </li>
+                <li><a href="#exp">Expérience &amp; Etude</a></li>
+                <li><a href="#pf">Projet fare</a></li>
+                <!--<li><a href="#cert">+ sur moi</a></li>-->
+                <li><a href="ressources/Tanneau_Yann_CV.pdf" target="_blank" rel="noopener noreferrer">CV</a></li>
+            </ul>
+        </header>
         <section>
             <article>
-                <div>
-                    <img src="ressources/data.jpg" alt="moi">
-                </div>
-                <div>
-                    <div>
-                    <h3>Réseau</h3>
-                        <ul>
-                            <li><a href="mailto:contact@exemple.com">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/yann-tanneau-0a1717356/">Linkedin</a></li>
-                            <li><a href="https://github.com/ytanneau">GitHub</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div>
-                    <h2>Yann Tanneau</h2>
-                </div>
-                <div>
-                    <h3>Actuellement en recherche de stage dans le développement d'application</h3>
-                    <p>
-                        Bonjour, 
-                        Je suis en 1<sup>er</sup> année de BUT informatique a l'IUT de Lannion <br>
-                        Et intéressé par les nouvelles technologies
-
-                    </p>
-                    <div>
-                        <a href="ressources/Tanneau_Yann_CV.pdf" download="Tanneau_Yann_CV.pdf">
-                            <button class="Btn">
-                            <svg class="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                            <span class="icon2"></span>
-                            <span class="tooltip">Download</span>
-                            </button>
-                        </a>
-                        <h4>Mon CV</h4>
-                    </div>
-                </div>
+                <img src="ressources/data.jpg" alt="">
             </article>
-        </section>
-
-        <section>
             <article>
-                <div><a href="ue1.html"><div><h5>Realiser un developpement d'application</h5></div></a></div>
-                <div><a href="ue2.html"><div><h5>Optimiser des applications informatiques</h5></div></a></div>
-                <div><a href="ue3.html"><div><h5>Administrer des systemes informatiques connunicants complexes</h5></div></a></div>
-                <div><a href="ue4.html"><div><h5>Gerer des donnees de l'information</h5></div></a></div>
-                <div><a href="ue5.html"><div><h5>Conduire un projet</h5></div></a></div>
-                <div><a href="ue6.html"><div><h5>Travailler dans une equipe informatique</h5></div></a></div>
+                <div>Yann Tanneau</div>
+                <div>Actuellement en recherche d'un stage pour le début d'année 2026 et d'une alternance pour l'année 2026-2027.</div>
             </article>
-
             <article>
-                <h3>Experience professionnelle</h3>
+                <ul>
+                <li><a href="mailto:contact@exemple.com"><img src="ressources/email.png" alt=""><h3>Email</h3></a></li>
+                <li><a href="https://www.linkedin.com/in/yann-tanneau/"><img src="ressources/linkedin.png" alt=""><h3>Linkedin</h3></a></li>
+                <li><a href="https://github.com/ytanneau"><img src="ressources/github.png" alt=""><h3>GitHub</h3></a></li>
+                </ul>
+            </article>
+            <article>
                 <p>
-                    <h4>CRENA ouest <br>
-                    2023 <br></h4>
-                    En observation avec les contrôleurs aériens. <br>
-                    Et aide à la mise en place de composants et vérification de système informatique avec les Issa. <br>
-                    Acquisition des bases des tests des programmes informatique. <br>
+                Passionné d'informatique, je suis à la recherche d'un stage pour appliquer mes compétences en développement web ou logiciel. <br>
+                Je suis intéressé par la quête d'options techniques et la confirmation de solutions performantes. <br>
+                Curieux, indépendant et méthodique, je suis disposé à participer à des projets novateurs.
                 </p>
             </article>
+        </section>
+        <section>
+            <h3>Mes compétences</h3>
+            <article class="competence-container">
+                <ul class="competence">
+                    <li><a href="Realiser_un_developpement_dapplication/">
+                        <h4>Realiser un developpement d'application</h4>
+                        <img src="ressources/comp/UE1.svg" alt="">
+                        <p>
+                            Développer une application consiste à concevoir, coder, tester et déployer une solution logicielle répondant à des besoins spécifiques.
+                        </p>
+                    </a></li>
 
+                    <li><a href="Optimiser_des_applications_informatiques/">
+                        <h4>Optimiser des applications informatiques</h4>
+                        <img src="ressources/comp/UE2.svg" alt="">
+                        <p>
+                            Optimiser une application consiste à améliorer ses performances, sa fiabilité et son efficacité.
+                        </p>
+                    </a></li>
+
+                    <li><a href="Administrer_des_systemes_informatiques_connunicants_complexes/">
+                        <h4>Administrer des systemes informatiques connunicants complexes</h4>
+                        <img src="ressources/comp/UE3.svg" alt="">
+                        <p>
+                            L’administration de systèmes informatiques communicants complexes requiert une maîtrise des architectures réseau, des protocoles de communication et des outils de supervision.
+                        </p>
+                    </a></li>
+
+                    <li><a href="Gerer_des_donnees_de_linformation/">
+                        <h4>Gerer des donnees de l'information</h4>
+                        <img src="ressources/comp/UE4.svg" alt="">
+                        <p>
+                            Gérer les données de l’information implique leur collecte, leur structuration, leur stockage et leur exploitation.
+                        </p>
+                    </a></li>
+
+                    <li><a href="Conduire_un_projet/">
+                        <h4>Conduire un projet</h4>
+                        <img src="ressources/comp/UE5.svg" alt="">
+                        <p>
+                            Conduire un projet informatique nécessite de planifier, coordonner et suivre les différentes étapes de sa réalisation.
+                        </p>
+                    </a></li>
+
+                    <li><a href="Travailler_dans_une_equipe_informatique/">
+                        <h4>Travailler dans une equipe informatique</h4>
+                        <img src="ressources/comp/UE6.svg" alt="" >
+                        <p>
+                            Travailler en équipe dans le domaine informatique demande de la collaboration, de la communication et une bonne répartition des compétences.
+                        </p>
+                    </a></li>
+                </ul>
+            </article>
+            <div>
+                <button class="fleche gauche">←</button>
+                <button class="fleche droit">→</button>
+            </div>
+            
+        </section>
+        <section>
+            <article>
+                <div>
+                    <h4>Mes certification</h4>
+                    <h5>CNIL  : MOOC Atelier RGPD</h5>
+                    <ul>
+                        <li>MODULE 1 : LE RGPD ET SES NOTIONS CLÉS</li>
+                        <li>MODULE 2 : LES PRINCIPES DE LA PROTECTION DES DONNÉES</li>
+                        <li>MODULE 3 : LES RESPONSABILITÉS DES ACTEURS</li>
+                        <li>MODULE 4 : LE DPO ET LES OUTILS DE LA CONFORMITÉ</li>
+                        <li>MODULE 6 : TRAVAIL ET DONNÉES PERSONNELLES</li>
+                    </ul>
+                    <h5>Pix</h5>
+                    <p>
+                        Certification score 434 PIX <br>
+                        <a href="app.pix.fr/verification-certificat">Vérifier ici</a> avec le code <strong>P-T48KCQKK</strong>
+                    </p>
+                </div>
+            </article>
+            <article>
+                <h4>Langage, technologie et outil maîtriser</h4>
+                    <table border="1" style="border-collapse:collapse; width:100%; text-align:center;">
+                        <thead>
+                            <tr>
+                                <th>Catégorie</th>
+                                <th>Compétences</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/html.png" alt="">HTML</li>
+                                        <li><img src="ressources/logo/css.png" alt="">CSS</li>
+                                        <li><img src="ressources/logo/php.png" alt="">PHP</li>
+                                        <li><img src="ressources/logo/javaScript.png" alt="">JavaScript</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Programmation</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/c.png" alt="">C</li>
+                                        <li><img src="ressources/logo/java.png" alt="">Java</li>
+                                        <li><img src="ressources/logo/python.png" alt="">Python</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Base de données</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/postgresql.png" alt="">PostgreSQL</li>
+                                        <li><img src="ressources/logo/mysql.png" alt="">MySQL</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Système</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/linux.png" alt="">Linux</li>
+                                        <li><img src="ressources/logo/bash.png" alt="">Bash</li>
+                                        <li><img src="ressources/logo/docker.png" alt="">Docker</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Conception</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/figma.png" alt="">Figma</li>
+                                        <li>draw.io</li>
+                                        <li><img src="ressources/logo/visualParadigm.png" alt="">Visual Paradigm</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>gestion de projet</td>
+                                <td>
+                                    <ul>
+                                        <li><img src="ressources/logo/jira.png" alt="">Jira</li>
+                                        <li>Projet Libre</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h3>Expériences professionnelles</h3>
+                <p>
+                    <h4>CRENA ouest <br>
+                    2023 7j, Stage en immersion<br></h4>
+                    Observation avec les contrôleurs aériens. <br>
+                    Mise en place de composants dans le système.<br>
+                    Vérification de système informatique avec les IESSA.<br>
+                    Apport technique : test des programmes informatique.<br>
+                    Apport personnel : immersion en milieu professionnel.<br>
+                </p>
+            </article>
             <article>
                 <h3>Formation</h3>
                 <div>
                     <p>
                         <h4>Bachelor universitaire de technologie</h4>
-                        <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">Informatique</a> <br>
-                        2024 - aujourd'hui. <a href="https://iut-lannion.univ-rennes.fr/">IUT de Lannion</a>
+                        <a href="https://www.enseignementsup-recherche.gouv.fr/sites/default/files/annexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf">Informatique - Réalisation d’applications : conception, développement, validation</a> <br>
+                        2024 - Aujourd'hui. <a href="https://iut-lannion.univ-rennes.fr/">IUT de Lannion</a>
                     </p>
                     <hr>
                     <p>
-                        <h4>Baccalauréat tecnologique</h4>
-                        STI2D, Systèmes d'information et numérique, mention bien <br>
+                        <h4>Baccalauréat technologique</h4>
+                        STI2D - Systèmes d'information et numérique, mention bien <br>
                         2021 - 2024. <a href="https://les-2-rives.fr/lycee-saint-sebastien/">Lycée Saint-Sébastien Landerneau</a>
                     </p>
-                </div>
-            </article>
-
-            <article>
-                <div>C/C++</div>
-                <div>Java</div>
-                <div>JavaScript</div>
-                <div>Python</div>
-                <div>Bash</div>
-                <div>Html</div>
-                <div>Css</div>
-                <div>Php</div>
-                <div>Sql</div>
-            </article>
-
-            <article>
-                <div>VSCode</div>
-                <div>Linux</div>
-                <div>Docker</div>
-                <div>MySql</div>
-                <div>Visual Paradigm</div>
-                <div>Figma</div>
             </article>
         </section>
-        
-        <footer id="footer">
-            yann.tanneau&commat;etudiant.univ-rennes.fr
+        <section>
+            projet fare
+        </section>
+
+        <footer>
+            <div>
+                <ul>
+                    <li><a href="mailto:contact@exemple.com"><img src="ressources/email.png" alt=""><h4>Email</h4></a></li>
+                    <li><a href="https://www.linkedin.com/in/yann-tanneau/"><img src="ressources/linkedin.png" alt=""><h4>Linkedin</h4></a></li>
+                    <li><a href="https://github.com/ytanneau"><img src="ressources/github.png" alt=""><h4>GitHub</h4></a></li>
+                </ul>
+            </div>
         </footer>
+        <nav>
+            <div class="page" id=""></div>
+            <div class="page" id="comp"></div>
+            <div class="page" id="vide1"></div>
+            <div class="page" id="exp"></div>
+        </nav>
         <script src="script.js"></script>
     </body>
 </html>
